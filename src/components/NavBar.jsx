@@ -37,7 +37,7 @@ const handleClick = () => setNav(!nav)
       <li className='py-3 cursor-pointer text-xl'>Nytro Gearbox</li>
       <li className='py-3 cursor-pointer text-xl'>Accessories</li>
       <li className='py-3 cursor-pointer text-xl'>Engine Suppliers</li>
-      <li className='py-3 cursor-pointer text-xl'>Downloadable Documents</li>
+      <li className='py-3 cursor-pointer text-xl'>Downloads</li>
       <li className='py-3 cursor-pointer text-xl'>Printable Documents</li>
       <li className='py-3 cursor-pointer text-xl'>FAQs</li>
       <li className='py-3 cursor-pointer text-xl'>Service Bulletins/Recalls</li>
@@ -45,7 +45,7 @@ const handleClick = () => setNav(!nav)
     </ul>
 
     {/* Social Icon Medium+ Screens*/}
-    <div className={nav ? 'hidden' : 'hidden md:flex fixed top-[50%] left-0 bg-blue-600 px-4 ml-[-130px] hover:ml-0 hover'}>
+    <div className={nav ? 'hidden' : 'hidden md:flex fixed top-[50%] left-0 bg-blue-600 px-4 ml-[-130px] hover:ml-0 hover duration-700'}>
       <a className='w-[160px] h-[60px] flex justify-between items-center' href='https://www.facebook.com/teal.jenkins.9'>
         FaceBook <FaFacebookSquare size={30} />
       </a>

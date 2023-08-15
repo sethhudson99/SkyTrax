@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
-import { RxDotFilled } from 'react-icons/rx';
+import React from 'react';
+import { Slider } from '../Functions/Slider';
+
 
 
 
@@ -36,59 +36,11 @@ const Nytro = () => {
     
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const prevSlide = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-  };
-
-  const nextSlide = () => {
-    const isLastSlide = currentIndex === slides.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
-  };
-
-  const goToSlide = (slideIndex) => {
-    setCurrentIndex(slideIndex);
-  };
-
-
   return (
     <div name='nytro' className='flex items-center justify-center text-center py-36 h-full w-full bg-slate-600'>
       <div className='max-w-[1000px]'>
           <h1 className='px-4 text-5xl text-gray-300'>The <span className=' text-red-600 font-extrabold'>Nytro</span> Gearbox</h1>
-
-          {/*Slider Container*/}
-          
-            <div className='max-w-[1000px] h-[600px] py-16 px-4 relative group'>
-              <div
-                style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-                className=' w-full h-full rounded-2xl bg-center bg-contain bg-no-repeat duration-500'
-              ></div>
-              {/* Left Arrow */}
-              <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-                <BsChevronCompactLeft onClick={prevSlide} size={30} />
-              </div>
-              {/* Right Arrow */}
-              <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-                <BsChevronCompactRight onClick={nextSlide} size={30} />
-              </div>
-              <div className='flex top-4 justify-center py-2'>
-                {slides.map((slide, slideIndex) => (
-                  <div
-                    key={slideIndex}
-                    onClick={() => goToSlide(slideIndex)}
-                    className='text-2xl cursor-pointer'
-                  >
-                    <RxDotFilled />
-                  </div>
-                ))}
-              </div>
-            </div>
-         
-
+          <div>{Slider(slides)}</div>
           <div className='px-4 pt-4 text-gray-300 text-lg'>
           This gearbox will fit all of the 3-cylinder Yamaha and Arctic Cat snowmobile engines. <br /> Three gear ratios will be available: 4.01:1, 3.45:1, and 2.85:1. <br /> Currently in stock and ready to ship Pricing<span className=' font-extrabold'>$4500</span>
           </div>

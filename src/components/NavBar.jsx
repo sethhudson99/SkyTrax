@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes, FaFacebookSquare } from 'react-icons/fa'
 import Logo from '../images/SkyTrax Images/Logo1.png'
+import { Link } from 'react-scroll'
 
 
 
@@ -18,10 +19,26 @@ const handleClick = () => setNav(!nav)
       {/* Menu */}
     
     <ul className='hidden md:flex items-center text-xl px-4'>
-      <li>Components</li>
-      <li>Apex Gearbox</li>
-      <li>Nytro Gearbox</li>
-      <li>Accessories</li>
+      <li>
+        <Link className=' cursor-pointer' to="components" smooth={true} duration={500}>
+          Components
+        </Link>
+      </li>
+      <li>
+        <Link className=' cursor-pointer' to="apex" smooth={true} duration={500}>
+          Apex Gearbox
+        </Link>
+      </li>
+      <li>
+        <Link className=' cursor-pointer' to="nytro" smooth={true} duration={500}>
+           Nytro Gearbox
+        </Link>
+      </li>
+      <li>
+        <Link className=' cursor-pointer' to="accessories" smooth={true} duration={500}>
+          Accessories
+        </Link>
+      </li>
     </ul>
   
 
@@ -32,16 +49,51 @@ const handleClick = () => setNav(!nav)
 
     {/* Mobile Menu */}
     <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 flex flex-col h-screen w-full bg-slate-600 justify-center items-center'}>
-      <li className='py-3 cursor-pointer text-xl'>Components</li>
-      <li className='py-3 cursor-pointer text-xl'>Apex Gearbox</li>
-      <li className='py-3 cursor-pointer text-xl'>Nytro Gearbox</li>
-      <li className='py-3 cursor-pointer text-xl'>Accessories</li>
-      <li className='py-3 cursor-pointer text-xl'>Engine Suppliers</li>
-      <li className='py-3 cursor-pointer text-xl'>Downloads</li>
-      <li className='py-3 cursor-pointer text-xl'>Printable Documents</li>
-      <li className='py-3 cursor-pointer text-xl'>FAQs</li>
-      <li className='py-3 cursor-pointer text-xl'>Service Bulletins/Recalls</li>
-      <li className='py-3 cursor-pointer text-xl'>Contact</li>
+      <li className='py-3 cursor-pointer text-xl'>
+        <Link className=' cursor-pointer' to="components" smooth={true} duration={500} onClick={handleClick}>
+          Components
+        </Link>
+      </li>
+      <li className='py-3 cursor-pointer text-xl'>
+        <Link className=' cursor-pointer' to="apex" smooth={true} duration={500} onClick={handleClick}>
+          Apex Gearbox
+        </Link>
+      </li>
+      <li className='py-3 cursor-pointer text-xl'>
+        <Link className=' cursor-pointer' to="nytro" smooth={true} duration={500} onClick={handleClick}>
+          Nytro Gearbox
+        </Link>
+      </li>
+      <li className='py-3 cursor-pointer text-xl'>
+        <Link className=' cursor-pointer' to="accessories" smooth={true} duration={500} onClick={handleClick}>
+          Accessories
+        </Link>
+      </li>
+      <li className='py-3 cursor-pointer text-xl'>
+        <Link className=' cursor-pointer' to="engine" smooth={true} duration={500} onClick={handleClick}>
+          Engine Suppliers
+        </Link>
+      </li>
+      <li className='py-3 cursor-pointer text-xl'>
+        <Link className=' cursor-pointer' to="downloads" smooth={true} duration={500} onClick={handleClick}>
+          Downloads
+        </Link>
+      </li>
+      <li className='py-3 cursor-pointer text-xl'>
+        <Link className=' cursor-pointer' to="faq" smooth={true} duration={500} onClick={handleClick}>
+          FAQs
+        </Link>
+      </li>
+      <li className='py-3 cursor-pointer text-xl'>
+        <Link className=' cursor-pointer' to="recalls" smooth={true} duration={500} onClick={handleClick}>
+          Product Service Bulletins and Recalls
+        </Link>
+      </li>
+      <li className='py-3 cursor-pointer text-xl'>
+        <Link className=' cursor-pointer' to="contact" smooth={true} duration={500} onClick={handleClick}>
+          Contact
+        </Link>
+      </li>
     </ul>
 
     {/* Social Icon Medium+ Screens*/}

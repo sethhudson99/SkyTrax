@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/SkyTrax/static/css/main.6165d937.css",
+    "main.js": "/SkyTrax/static/js/main.85968ca5.js",
+    "static/media/Components1.jpeg": "/SkyTrax/static/media/Components1.ca2a1e1f75484aa4050c.jpeg",
+    "static/media/Acc2.jpeg": "/SkyTrax/static/media/Acc2.3c5a2398875680b1f66f.jpeg",
+    "static/media/Acc3.jpeg": "/SkyTrax/static/media/Acc3.77f11ea0d3517a40fe49.jpeg",
+    "static/media/Acc4.jpeg": "/SkyTrax/static/media/Acc4.e50fa500a3d0cf027a74.jpeg",
+    "static/media/Logo1.png": "/SkyTrax/static/media/Logo1.123809740cd158d6097c.png",
+    "static/media/Acc1.jpeg": "/SkyTrax/static/media/Acc1.cb735eade808b82f9370.jpeg",
+    "index.html": "/SkyTrax/index.html",
+    "main.6165d937.css.map": "/SkyTrax/static/css/main.6165d937.css.map",
+    "main.85968ca5.js.map": "/SkyTrax/static/js/main.85968ca5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6165d937.css",
+    "static/js/main.85968ca5.js"
+  ]
+}
